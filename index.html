@@ -138,9 +138,12 @@
           } else if (number === 2) {
             document.querySelector("#desc2").classList.remove("hideText");
             document.querySelector("#desc2").classList.add("showText");
-          } else {
+          } else if (number === 3) { 
             document.querySelector("#desc3").classList.remove("hideText");
             document.querySelector("#desc3").classList.add("showText");
+          } else { 
+            document.querySelector("#desc4").classList.remove("hideText");
+            document.querySelector("#desc4").classList.add("showText");
           }
         }
 
@@ -154,9 +157,12 @@
           } else if (number === 2) {
             document.querySelector("#desc2").classList.remove("showText");
             document.querySelector("#desc2").classList.add("hideText");
-          } else {
+          } else if (number === 3) {
             document.querySelector("#desc3").classList.remove("showText");
             document.querySelector("#desc3").classList.add("hideText");
+          } else {
+            document.querySelector("#desc4").classList.remove("showText");
+            document.querySelector("#desc4").classList.add("hideText");
           }
         }
 
@@ -198,7 +204,16 @@
                     눈 엄청 온 날
                 </span>
             </div>
-
+            
+            <div id="image4" class="photo-frame"
+            onmouseover="hideText(4)"
+            onmouseout="showText(4)"
+            onclick="alertText(4)">
+                <span id="desc4" class="photo-description">
+                    스키장 간 날
+                </span>
+            </div>
+            
             <!-- src : source, 즉 자료의 원천이 어디있는지를 의미해요! 
             <div class="photo-frame"
             onmouseover="hideText(4)"
@@ -211,17 +226,7 @@
             	>
                 </iframe>
             </div>
-            -->
-
-            <div id="image4" class="photo-frame"
-            onmouseover="hideText(4)"
-            onmouseout="showText(4)"
-            onclick="alertText(4)">
-                <span id="desc4" class="photo-description">
-                    스키장 간 날
-                </span>
-            </div>
-            
+            --> 
         </div>
 
         <div class="footer">
